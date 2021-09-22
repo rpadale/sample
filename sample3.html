@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#2C4185"> <!-- Windows Phone -->
+    <meta name="msapplication-navbutton-color" content="#2C4185"> <!-- iOS Safari -->
+    <meta name="apple-mobile-web-app-status-bar-style" content="#2C4185"> <!-- SOCIAL -->
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.1/css/all.css">
+    <!-- FONTS -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,500,700&amp;display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900&amp;display=swap" rel="stylesheet">
+
+    <title>Fire Open Payments: Payment to Calcutta Connect Ltd</title>
+    <style>
+        #mainDiv {
+            background: #fff;
+            position: relative;
+            min-height: 600px;
+            border-radius: 16px;
+            padding: 20px;
+            box-shadow: 0 1px 10px #60bbbc66;
+        }
+
+        * {
+            box-sizing: border-box
+        }
+
+        *:focus {
+            outline: 0
+        }
+
+        body {
+            font-family: 'Lato', 'Open Sans', sans-serif;
+            background-color: #eee;
+            padding: 0;
+            margin: 0
+        }
+
+        #page {
+            width: 400px;
+            margin-left: auto;
+            margin-right: auto
+        }
+
+        #main {
+            position: relative;
+            min-height: 600px;
+            padding: 20px
+        }
+
+        #logo {
+            background-image: url(https://toppng.com/uploads/preview/barclays-investment-bank-logo-115630277832rlaxpy1ry.png);
+            height: 32px;
+            width: 64px;
+            float: left;
+            background-repeat: no-repeat;
+            background-size: contain;
+            margin: 16px;
+        }
+
+        #headingDetails, #headingDetails, #details{
+            margin: 0 0 32px 0;
+        }
+
+        #headingDetails #paymt,#details #bank,
+        .action {
+            font-size: 20px;
+            color: #84858b;
+            margin-left: 28px
+        }
+
+        #headingDetails #paymt i, #details #bank i
+        .action i {
+            width: 28px;
+            margin-left: -28px
+        }
+
+        .section {
+            background: white;
+            box-shadow: 1px 0 10px #84858b66;
+            padding: 16px 8px;
+            border-radius: 8px;
+            margin: 16px 0;
+            cursor: pointer
+        }
+
+        .section>div:first-child {
+            float: left;
+            width: 56px
+        }
+
+        .section-name {
+            font-size: 16px;
+            font-weight: 600;
+            color: #666
+        }
+
+        .section-logo {
+            height: 36px;
+            width: 48px;
+            background-size: contain;
+            margin: -8px 0;
+            background-repeat: no-repeat;
+            background-position: center
+        }
+
+        .button {
+            text-align: center;
+            line-height: 32px;
+            border: 0;
+            background: #009aff;
+            color: white;
+            text-transform: uppercase;
+            padding: 8px;
+            border-radius: 12px;
+            margin-top: 16px;
+            font-weight: 700;
+            font-size: 14px;
+            cursor: pointer;
+            -webkit-touch-callout: none;
+            -webkit-user-select: none;
+            -khtml-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none
+        }
+
+
+        #header {
+            height: 64px
+        }
+
+        #headingDetails #paymt span, .payeeName {
+            color: #333;
+        }
+        #headingDetails #desc {
+            font-size: 16px;
+            color: #84858b;
+            margin-left: 28px;
+        }
+        #headerTitle {
+            float: right;
+            line-height: 64px;
+            padding-right: 24px;
+            color: #2c418599;
+            font-weight: 500;
+            font-size: 14px
+        }
+
+        @media only screen and (max-width:600px) {
+            body {
+                background: #2c4185
+            }
+
+            #logo {
+                background-image: url(https://toppng.com/uploads/preview/barclays-investment-bank-logo-115630277832rlaxpy1ry.png)
+            }
+
+            #headerTitle {
+                color: #ffffff99
+            }
+
+            #page {
+                height: 100vh;
+                width: auto;
+                margin: 0
+            }
+
+            #page.overflow {
+                height: auto;
+                position: relative;
+                top: auto;
+                border-radius: 16px
+            }
+
+            #mainDiv {
+                position: absolute;
+                bottom: 0;
+                top: 64px;
+                right: 0;
+                left: 0;
+                box-shadow: none;
+                border-radius: 0;
+                border-top-right-radius: 16px;
+                border-top-left-radius: 16px
+            }
+
+            #mainDiv.min-height {
+                min-height: 70vh
+            }
+
+            #main {
+                padding: 20px 20px 30px 20px
+            }
+
+            #page.overflow #mainDiv {
+                position: relative;
+                top: auto;
+                border-radius: 16px
+            }
+
+            #btn-continue-to-section {
+                bottom: 32px
+            }
+
+            #btn-continue-to-merchant {
+                bottom: 75px
+            }
+
+        }
+
+        #btnDiv {
+            margin: 0 0 32px 0;
+        }
+
+        #btnDiv-wrapper {
+            background: #ffffffaa;
+            padding: 16px 0;
+            border-radius: 8px;
+        }
+
+        #btnDiv-wording {
+            margin: 8px 16px 8px 28px;
+            font-size: 20px;
+        }
+        #details #bank span {
+    color: #333;
+}
+    </style>
+</head>
+
+<body class="body">
+    <div id="page" class="overflow">
+        <div id="browserMsg" class="errorBlock hidden"></div>
+        <div id="header">
+            <div id="logo"></div>
+            <div id="headerTitle">Fire Open Payments</div>
+        </div>
+        <div id="mainDiv" class="min-height">
+            <div id="headingDetails">
+                <div id="paymt"> <i class="fas fa-receipt" aria-hidden="true"></i>Pay <span id="currencyAmount">
+                        £0.20</span> to <span>Calcutta Connect Ltd</span> </div>
+                <div id="desc"> <span>Calcutta Connect Donation</span> </div>
+            </div>
+            <div id="details">
+                <div id="bank"><i class="fas fa-university" aria-hidden="true"></i>From your <span
+                        id="aspspAlias">Barclays - Corporate</span> account. </div>
+            </div>
+            <div id="btnDiv">
+                <div id="btnDiv-wrapper">
+                    <div id="btnDiv-wording">
+                        <div class="button" onclick="return false;">Agree</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
